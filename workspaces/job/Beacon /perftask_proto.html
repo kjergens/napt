@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PT</title>
+<link rel="stylesheet" type="text/css" href="pt.css">
+<meta charset="utf-8">
+<head>
+<body>
+	<div class="page_wrapper">
+		<div class="page_header">
+			<h2>Plan Your Performance Task</h2>
+		</div>
+		<center>
+		<div class="htable">
+			<div class="tr header">
+				<div class="td corehead"><h3>Core Task</h3></div>
+				<div class="td act_head"><h3>Activies</h3></div>
+			</div>
+		</div>
+		<div class="table">
+		<div class="tr">
+			<div class="td core_task" id="r1" onclick="select_r1()">
+				<div class="topic">Reading</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+
+			<div class="td option_col disc" id="d1" onclick="select_d1()">
+				<div class="topic">Discussion</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+
+			<div class="td option_col t_chart" id="t1" onclick="select_t1()">
+				<div class="topic">T-Chart</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+
+			<div class="td option_col s_res" id="s1" onclick="select_s1()">
+				<div class="topic">Short Response</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+		</div>
+		<div class="tr">
+			<div class="td core_task" id="r2" onclick="select_r2()">
+				<div class="topic">Reading</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+
+			<div class="td option_col disc" id="d2" onclick="select_d2()">
+				<div class="topic">Discussion</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div>
+			</div>
+
+			<div class="td option_col t_chart" id="t2" onclick="select_t2()">
+				<div class="topic">T-Chart</div>
+				<div class="details" onclick="moredetails()">
+					<a href="#">Details</a>
+				</div>
+			</div>
+
+			<div class="td option_col s_res" id="s2" onclick="select_s2()">
+				<div class="topic">Short Response</div>
+				<div class="details" onclick="moredetails()">
+					<a href="#">Details</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="tr">
+			<div class="td core_task" id="r3" onclick="select_r3()">
+				<div class="topic">Reading</div>
+				<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
+
+			<div class="td option_col disc" id="d3" onclick="select_d3()">
+				<div class="topic">Discussion</div>
+				<div class="details" onclick="moredetails()">
+					<a href="#">Details</a>
+				</div>
+			</div>
+
+			<div class="td option_col t_chart" id="t3" onclick="select_t3()">
+				<div class="topic">T-Chart</div>
+				<div class="details" onclick="moredetails()">
+					<a href="#">Details</a>
+				</div>
+			</div>
+
+			<div class="td option_col x_res" id="s3" onclick="select_s3()"><div class="topic">Extended Response</div>
+				<div class="details" onclick="moredetails()">
+					<a href="#">Details</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</center>
+	</div>
+
+<script>
+
+function select_d1()
+{
+   document.getElementById("d1").className += " selected";
+   document.getElementById("r1").className += " selected_core";
+}
+
+function select_t1()
+{
+   document.getElementById("t1").className += " selected";
+   document.getElementById("r1").className += " selected_core";
+}
+
+function select_s1()
+{
+   document.getElementById("s1").className += " selected";
+   document.getElementById("r1").className += " selected_core";
+}
+
+function select_d2()
+{
+   document.getElementById("d2").className += " selected";
+   document.getElementById("r2").className += " selected_core";
+}
+
+function select_t2()
+{
+   document.getElementById("t2").className += " selected";
+   document.getElementById("r2").className += " selected_core";
+}
+
+function select_s2()
+{
+   document.getElementById("s2").className += " selected";
+   document.getElementById("r2").className += " selected_core";
+}
+
+function select_d3()
+{
+   document.getElementById("d3").className += " selected";
+   document.getElementById("r3").className += " selected_core";
+}
+
+function select_t3()
+{
+   document.getElementById("t3").className += " selected";
+   document.getElementById("r3").className += " selected_core";
+}
+
+function select_s3()
+{
+   document.getElementById("s3").className += " selected";
+   document.getElementById("r3").className += " selected_core";
+}
+
+function moredetails()
+{
+	alert("More details");
+}
+</script>
+
+</body>
+</html>
