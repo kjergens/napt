@@ -1,0 +1,13 @@
+#footer {
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  background-color: #efefef;
+  letter-spacing: -1px;
+  padding: 26px 0 600px;
+  text-align: center; 
+  color: #414f55;
+}
+
+#footer a:hover { 
+  color: #999;
+}
